@@ -1,70 +1,73 @@
+<!-- README.md(EN)와 README.ko.md(KO)는 함께 고친다 -->
+**English** | [한국어](README.ko.md)
+
 # LifeOS
 
-할 일, 달력, 시간표, 습관, 목표, 프로젝트, 돈 관리, 식단·냉장고, 옷장, 건강·운동, 공부, 연구 노트, 독서·영화 기록을 한 앱에 모은 개인 기록 앱입니다.
+A personal tracking app that gathers to-dos, a calendar, a timetable, habits, goals, projects, money management, meal plans and a fridge, a wardrobe, health and exercise, study, research notes, and reading and movie logs in one app.
 
-- 회원 가입이 없습니다. 기록은 설치한 기기에만 저장됩니다.
-- Android 폰과 Ubuntu PC에서 씁니다. Windows 판은 준비 중입니다.
-- 화면은 한국어이고, 날짜는 기기의 시간대와 상관없이 한국 시간으로 셉니다.
+- There is no sign-up. Your records are stored only on the device where you install it.
+- You use it on an Android phone and an Ubuntu PC. A Windows version is in preparation.
+- The screens are in Korean, and dates are counted in Korean time regardless of the device's time zone.
 
-<p align="center"><img src="docs/today-pc.png" alt="PC의 오늘 화면" width="100%"></p>
+<p align="center"><img src="docs/today-pc.png" alt="Today screen on a PC" width="100%"></p>
 <p align="center">
-  <img src="docs/today-phone.png" alt="폰의 오늘 화면" width="32%">
-  <img src="docs/money-phone.png" alt="폰의 돈 관리" width="32%">
-  <img src="docs/fridge-phone.png" alt="폰의 식단·냉장고" width="32%">
+  <img src="docs/today-phone.png" alt="Today screen on a phone" width="32%">
+  <img src="docs/money-phone.png" alt="Money management on a phone" width="32%">
+  <img src="docs/fridge-phone.png" alt="Meal plan and fridge on a phone" width="32%">
 </p>
-<p align="center"><sub>사진 속 기록은 예시입니다.</sub></p>
+<p align="center"><sub>The records in the pictures are examples.</sub></p>
 
-## 받기
+## Download
 
-[최신 판 받기](../../releases/latest)에서 기기에 맞는 파일을 받으세요.
+Get the file for your device from [Get the latest version](../../releases/latest).
 
-| 기기 | 파일 |
+| Device | File |
 | --- | --- |
-| Android 8 이상 | `LifeOS-public-<판>.apk` |
-| Ubuntu 22.04 이상, amd64 (24.04에서 확인) | `lifeos-public_<판>_amd64.deb` |
-| Windows | 준비 중 |
+| Android 8 or later | `LifeOS-public-<version>.apk` |
+| Ubuntu 22.04 or later, amd64 (checked on 24.04) | `lifeos-public_<version>_amd64.deb` |
+| Windows | In preparation |
 
-릴리스 설명에 파일마다 SHA-256이 적혀 있습니다. 받은 파일이 온전한지는 PC에서 `sha256sum <파일 이름>`으로 확인할 수 있습니다.
+The SHA-256 of each file is written in the release description. On a PC you can check that a downloaded file is intact with `sha256sum <file name>`.
 
-## Android에 설치하기
+## Installing on Android
 
-1. 폰 브라우저에서 APK를 받아 엽니다.
-2. 설치를 막는 창이 나오면 **설정**을 눌러, 파일을 연 앱(Chrome이나 내 파일)의 **이 출처 허용**을 켜고 돌아와 설치합니다.
-   - 갤럭시에서 미리 켜 두려면: 설정 › 애플리케이션 › ⋮(더보기) › 특별한 접근 › 출처를 알 수 없는 앱 설치 › Chrome(또는 내 파일) › 이 출처 허용
-3. 갤럭시에서 **보안 위험 자동 차단** 때문에 막히면, 설정 › 보안 및 개인정보 보호 › 보안 위험 자동 차단을 잠시 끄고 설치한 뒤 다시 켭니다. 이 기능이 켜져 있으면 새 판으로 업데이트도 안 되니, 업데이트할 때도 잠시 끕니다.
-4. Play 스토어에서 받은 앱이 아니어서 Play 프로텍트가 경고할 수 있습니다. 내용을 읽고 설치를 계속할지 정하세요.
+1. Download the APK in your phone's browser and open it.
+2. If a window blocks the installation, tap **Settings**, turn on **Allow from this source** for the app that opened the file (Chrome or My Files), then go back and install.
+   - To turn it on beforehand on a Galaxy: Settings › Apps › ⋮ (More) › Special access › Install unknown apps › Chrome (or My Files) › Allow from this source
+3. If **Auto Blocker** (the automatic security-risk block) stops you on a Galaxy, temporarily turn off Settings › Security and privacy › Auto Blocker, install, then turn it back on. While this feature is on, you cannot update to a new version either, so turn it off briefly when you update, too.
+4. Because the app did not come from the Play Store, Play Protect may show a warning. Read it and decide whether to continue installing.
 
-홈 화면에 **LifeOS 할 일**, **LifeOS 달력**, **LifeOS 예산**(넓게, 작게, 한 줄) 위젯을 놓을 수 있습니다.
+You can place the **LifeOS 할 일** (TODO), **LifeOS 달력** (calendar) and **LifeOS 예산** (budget; wide, small, one line) widgets on the home screen.
 
-### 앱이 쓰는 권한
+### Permissions the app uses
 
-문자, 알림, 건강, 마이크 권한은 그 기능을 쓸 때 Android가 따로 묻습니다. 허락하지 않아도 다른 기능은 그대로 쓸 수 있습니다.
+Android asks separately for the text-message, notification, health and microphone permissions when you use that feature. Even if you do not allow them, the other features work as usual.
 
-| 권한 | 쓰는 곳 |
+| Permission | Where it is used |
 | --- | --- |
-| 알림 읽기, 문자 읽기 | 돈 관리 › 설정 › 자동 기록. 카드·페이·은행 앱의 결제 알림과 결제 문자를 읽어 지출로 적습니다. 직접 켜기 전에는 읽지 않고, 읽은 내용은 폰 밖으로 보내지 않습니다. |
-| 알림 표시 | 결제를 감지했을 때 분류를 고르는 알림, 예산 알림 |
-| 건강 데이터 읽기 (헬스 커넥트) | 건강의 **삼성 헬스에서 가져오기**. 걸음, 수면, 운동, 거리, 칼로리, 심박, 산소포화도, 체중, 체지방, 키를 읽기만 합니다. |
-| 마이크 | 학습 › OPIc 연습의 녹음 |
-| 생체 인증 | 돈 관리 › 설정의 **앱 열 때 인증** (지문이나 화면 잠금) |
-| 인터넷 | 날씨, 환율, 주가 |
+| Read notifications, read text messages | Money management › Settings › Auto record. It reads payment notifications and payment text messages from card, pay and bank apps and records them as spending. It does not read anything until you turn it on yourself, and what it reads is not sent off the phone. |
+| Show notifications | Notifications that let you pick a category when a payment is detected, and budget alerts |
+| Read health data (Health Connect) | **Import from Samsung Health** in Health. It only reads steps, sleep, exercise, distance, calories, heart rate, oxygen saturation, weight, body fat and height. |
+| Microphone | Recording in Study › OPIc practice |
+| Biometric authentication | **Authenticate when opening the app** in Money management › Settings (fingerprint or screen lock) |
+| Internet | Weather, exchange rates, stock prices |
 
-알림 읽기를 켜려는데 '제한된 설정'이라며 막히면, 설정 › 애플리케이션 › LifeOS › ⋮ › **제한된 설정 허용**을 누른 뒤 다시 켭니다. Android가 웹에서 받은 앱에 거는 제한입니다.
+If you try to turn on reading notifications and it is blocked as a "restricted setting", tap Settings › Apps › LifeOS › ⋮ › **Allow restricted settings**, then turn it on again. This is a restriction Android puts on apps downloaded from the web.
 
-## Ubuntu에 설치하기
+## Installing on Ubuntu
 
 ```sh
-sudo apt install ./lifeos-public_<판>_amd64.deb
+sudo apt install ./lifeos-public_<version>_amd64.deb
 ```
 
-- 앱 목록에서 **LifeOS**를 엽니다. 처음 열 때 기록을 맡는 사용자 서비스 `lifeos-desktop.service`를 만들어 켭니다. 이 서비스는 로그인할 때마다 켜집니다.
-- 같은 PC의 브라우저에서 <http://127.0.0.1:8787>로 열어도 같은 기록이 보입니다.
-- **바탕화면 TODO**는 LifeOS 아이콘을 오른쪽 클릭하거나, 앱 창 위의 메뉴 버튼에서 엽니다. 같은 메뉴의 **로그인할 때 바탕화면 TODO 실행**을 켜면 로그인할 때마다 뜹니다.
-- 기록은 `~/.local/share/lifeos`에 저장됩니다.
-- **`~/.todo.txt`를 쓰고 있다면 설치 전에 확인하세요.** LifeOS는 할 일을 이 파일에도 적습니다. 처음 열 때 이 파일이 있으면 그 내용을 할 일로 가져오고 원본을 `~/.local/share/lifeos/backups/`에 복사해 둔 다음, 그 뒤로는 LifeOS의 할 일로 덮어씁니다.
-- **AI** 페이지는 이 PC에 Codex나 Claude Code가 설치되어 로그인되어 있어야 합니다. AI에게 요청하면 요청 내용과 거기에 필요한 기록이 그 서비스(OpenAI, Anthropic)로 갑니다. Android에서는 AI를 쓸 수 없습니다.
+- Open **LifeOS** from the app list. The first time you open it, it creates and starts the user service `lifeos-desktop.service`, which holds your records. This service starts every time you log in.
+- Opening <http://127.0.0.1:8787> in a browser on the same PC shows the same records.
+- Open the **desktop TODO** by right-clicking the LifeOS icon or from the menu button above the app window. If you turn on **Run the desktop TODO at login** in the same menu, it appears every time you log in.
+- Records are stored in `~/.local/share/lifeos`.
+- **If you use `~/.todo.txt`, check before installing.** LifeOS also writes your to-dos to this file. If this file exists the first time you open it, LifeOS imports its contents as to-dos and copies the original to `~/.local/share/lifeos/backups/`, and after that it overwrites the file with LifeOS's to-dos.
+- The **AI** page needs Codex or Claude Code to be installed and signed in on this PC. When you ask the AI something, your request and the records it needs go to that service (OpenAI, Anthropic). You cannot use the AI on Android.
 
-### 지우기
+### Uninstalling
 
 ```sh
 systemctl --user disable --now lifeos-desktop.service
@@ -73,39 +76,39 @@ systemctl --user daemon-reload
 sudo apt remove lifeos
 ```
 
-기록까지 지우려면 JSON 백업을 받아 둔 뒤 `~/.local/share/lifeos` 폴더를 지웁니다.
+To delete the records as well, take a JSON backup first, then delete the `~/.local/share/lifeos` folder.
 
-## 기록과 백업
+## Records and backups
 
-- 기기 사이 동기화는 없습니다. 폰과 PC의 기록은 따로입니다.
-- **백업**: 설정·백업 › **JSON 백업**으로 기록 파일을 받아 둡니다. 가끔 해 두세요.
-- **옮기기와 복원**: 다른 기기의 LifeOS에서 설정·백업 › **JSON 가져오기**로 그 파일을 고르고, 내용을 확인한 뒤 **확인한 백업으로 복원**을 누릅니다. 그 기기의 기록 전체가 백업 내용으로 바뀝니다.
-- Android 앱을 지우거나 앱 데이터를 지우면 기록도 지워지고, 구글 백업에도 남지 않습니다. 폰을 바꿀 때는 JSON 백업으로 옮기세요.
+- There is no sync between devices. The records on your phone and your PC are separate.
+- **Backup**: get a records file with Settings/Backup › **JSON backup**. Do it from time to time.
+- **Moving and restoring**: in LifeOS on another device, choose that file with Settings/Backup › **Import JSON**, check the contents, then tap **Restore the checked backup**. All the records on that device are replaced with the backup's contents.
+- If you uninstall the Android app or clear its app data, the records are erased as well, and they are not kept in a Google backup either. When you change phones, move them with a JSON backup.
 
-## 새 판으로 바꾸기
+## Switching to a new version
 
-- [릴리스](../../releases)에서 새 파일을 받아 처음처럼 설치하면 덮어 설치되고, 기록은 그대로 남습니다.
-- Ubuntu에서는 설치한 뒤 LifeOS를 다시 열면 새 판으로 바뀝니다.
-- 지금 쓰는 판은 메뉴 맨 아래에 `LifeOS <판> 배포판`으로 나옵니다.
+- Download the new file from [Releases](../../releases) and install it as you did at first; it installs over the old one and your records stay as they are.
+- On Ubuntu, open LifeOS again after installing and it switches to the new version.
+- The version you are using appears at the bottom of the menu as `LifeOS <version> 배포판` (distributed edition).
 
-## 기기 밖으로 나가는 것
+## What leaves your device
 
-LifeOS에는 계정, 광고, 사용 통계가 없습니다. 인터넷은 아래 경우에만 씁니다.
+LifeOS has no accounts, no ads and no usage statistics. It uses the internet only in the cases below.
 
-| 기능 | 보내는 곳 | 보내는 것 |
+| Feature | Sent to | What is sent |
 | --- | --- | --- |
-| 날씨 | Open-Meteo | 위치를 찾을 때 적은 이름, 날씨를 받을 때 그 위치의 좌표 |
-| 환율 | Frankfurter | 통화 |
-| 주가 | 네이버 증권 | 종목 |
-| AI (Ubuntu) | OpenAI(Codex) 또는 Anthropic(Claude Code) | 요청 내용과 거기에 필요한 기록 |
+| Weather | Open-Meteo | The name you typed when looking up a location; the coordinates of that location when fetching the weather |
+| Exchange rates | Frankfurter | The currency |
+| Stock prices | Naver Securities | The ticker |
+| AI (Ubuntu) | OpenAI (Codex) or Anthropic (Claude Code) | Your request and the records it needs |
 
-## 이용 조건
+## Terms of use
 
-- LifeOS 배포판은 누구나 무료로 설치해 쓸 수 있습니다.
-- 있는 그대로 제공하며, 쓰다가 생긴 기록 손실이나 문제는 책임지지 않습니다. 중요한 기록은 JSON 백업을 해 두세요.
-- 이 저장소의 파일을 고치거나, 다른 곳에 다시 올리거나, 팔지 마세요. 이 페이지 링크를 나누는 것은 괜찮습니다.
-- 앱에 들어 있는 오픈소스 소프트웨어는 각자의 라이선스를 따릅니다. 목록과 전문은 릴리스마다 있는 `THIRD-PARTY-NOTICES.txt`에 있습니다.
+- Anyone can install and use the LifeOS distributed edition for free.
+- It is provided as is, and we are not responsible for lost records or other problems that arise from using it. Take a JSON backup of important records.
+- Do not modify the files in this repository, re-upload them elsewhere, or sell them. Sharing the link to this page is fine.
+- The open-source software inside the app follows each project's own license. The list and full texts are in `THIRD-PARTY-NOTICES.txt` attached to every release.
 
-## 문의
+## Contact
 
-버그나 바라는 점은 [Issues](../../issues)에 남겨 주세요. 개인 기록이나 결제 내용은 적지 말아 주세요.
+Leave bugs and requests in [Issues](../../issues). Please do not write personal records or payment details.
